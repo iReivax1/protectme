@@ -1,15 +1,32 @@
-import React from "react";
 import "../App.css";
-import {Button} from "./Button";
+// import {Button} from "./Button";
 import "./HeroSection.css";
+import React, { Component } from 'react'
 
-function HeroSection() {
-
-    return (
-        <div className="hero-container">
-            <h1>Welcome</h1>
-            <p>Test</p>
-            {/* <div className="hero-btns">
+export default class Herosection extends Component {
+    constructor(props){
+        super(props);
+     
+    }
+    
+    render() {
+        let text = null
+        switch (this.props.section) {
+            case "about":
+                text = <p>about</p>
+                break;
+            case "home":
+                text = <p>hello</p>
+                break;
+            default:
+                break;
+        }
+        return (
+            <div className="hero-container">
+                <h1>Welcome</h1>
+            {text}
+            </div>
+            /* <div className="hero-btns">
                 <Button
                     className="btns"
                     buttonStyle="btn--outline"
@@ -27,9 +44,7 @@ function HeroSection() {
                     WATCH TOUR <i className="far fa-play-circle"/>
                 </Button>
 
-            </div> */}
-        </div>
-    );
+            </div> */
+        )
+    }
 }
-
-export default HeroSection;
