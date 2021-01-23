@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../Footer';
 
 //Fetch api
 const post = async (data) => {
@@ -59,6 +60,9 @@ class Form extends Component {
 
   render() {
     return (
+      <React.Fragment>
+      
+      <h1>ask@protectmi2.com</h1>
       <form ref={this.formElement}
             onSubmit={(event) => this.submitForm(event)}>
         <input type="text"
@@ -72,6 +76,9 @@ class Form extends Component {
                id="message" />
         <button type="submit">Submit</button>
       </form>
+      <Footer/>
+      
+      </React.Fragment>
     );
   }
 }

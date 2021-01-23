@@ -1,29 +1,19 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
     return (
         <div className="footer-container">
-            {/* <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the newsletter our latest news
+            <section className='footer-subscription'>
+                <p className='footer-subscription-heading'>
+                    Contact us for more information
         </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+                <p className='footer-subscription-text'>
+                    ask@protectmi2.com
         </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
-      </section> */}
+
+            </section>
             {/* <div className="footer-links">
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
@@ -62,12 +52,13 @@ function Footer() {
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
+
                         <Link to="/" className="social-logo">
-                            ProtectMe
+                            <i class="fas fa-shield-alt"></i>        ProtectMe
                             {/* <i class='fab fa-typo3' /> */}
                         </Link>
                     </div>
-                    
+
                     {/* <div className="social-icons">
                         <Link
                             className="social-icon-link facebook"

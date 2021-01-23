@@ -9,12 +9,23 @@ export default class Home extends Component {
         return (
             <React.Fragment>
                 <div id="home">
-                    <HeroSection section="home"/>
+                    <HeroSection section="home" />
                 </div>
-                <HeroSection/>
+                <br/>
+                <br/>
+                <HeroSection section="sritang0" />
+                <HeroSection section="sritang1" />
+                <HeroSection section="sritang2" />
+                <HeroSection section="sritang3" />
+                <br></br>
+                <HeroSection section="sritang4" />
+                <br/>
+                <HeroSection section="savemed0" />
+                <br/>
                 <div id="about">
-                    <HeroSection section="about"/>
+                <HeroSection section="about" />
                 </div>
+                <br/>
                 <Footer />
             </React.Fragment>
         )
