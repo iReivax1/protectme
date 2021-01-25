@@ -20,7 +20,12 @@ export default class Home extends Component {
                 <br></br>
                 <HeroSection section="sritang4" />
                 <br/>
-                <HeroSection section="savemed0" />
+                {/* <HeroSection section="savemed0" /> */}
+                <HeroSection section="siam0" />
+                <br/>
+                <HeroSection section="siam1" />
+                <br/>
+                <HeroSection section="siam2" />
                 <br/>
                 <div id="about">
                 <HeroSection section="about" />

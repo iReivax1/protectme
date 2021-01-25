@@ -42,6 +42,15 @@ export default class Herosection extends Component {
             case "savemed0":
                 image = <img className="savemed" src="images/savemed/0.png" alt="nitrile gloves" />
                 break;
+            case "siam0":
+                image = <img src="images/siam/0.png" alt="nitrile gloves" />
+                break;
+            case "siam1":
+                    image = <img src="images/siam/1.png" alt="nitrile gloves" />
+                    break;
+            case "siam2":
+                    image = <img src="images/siam/2.png" alt="nitrile gloves" />
+                    break;
             default:
                 break;
         }
